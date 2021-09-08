@@ -1,0 +1,245 @@
+.professionalview-container{
+    width: 100%;
+    background: rgb(238, 233, 233);
+    padding: 40px;
+    min-height: 90vh;
+    z-index: -6;
+}
+.professionalview{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    background: white;
+    border-radius: 5px;
+    border:1px solid rgb(185, 181, 181);
+    border-bottom: none;
+}
+.professionalview-title{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid rgb(185, 181, 181);
+    display:flex;
+    align-items: center;
+}
+.professionalview-title h2{
+    margin-left: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+    text-align: left;
+}
+/*professional card*/
+
+.professionalcard-container{
+    padding:0 0 20px 0;
+    height: 200px;
+    width: 1000px;
+    border-bottom: 1px solid rgb(185, 181, 181);
+    display: flex;
+    align-items: center;
+}
+.professionalcard-img{
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.professionalcard-img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.professionalcard-title{
+    min-width: 250px;
+    height: 130px;
+}
+.professionalcard-title h3{
+    font-weight: 500;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+    text-align: left;
+}
+.professionalcard-title h5{
+    font-weight: 600;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+    text-align: left;
+    margin-left: 3px;
+}
+.professionalcard-title p{
+    font-weight: 500;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(77, 75, 77);
+    text-align: left;
+    margin-left: 3px;
+}
+.professionalcard-info{
+    flex: 1;
+    height: 120px;
+    margin-right:40px ;
+}
+.professionalcard-info-top{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+.professionalcard-info-top p{
+    font-weight: 600;
+    letter-spacing: 0.052rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-left: 3px;
+}
+.professionalcard-info-bottom{
+    height: 70px;
+    margin-top: 5px;
+    overflow: hidden;
+    align-items: center;
+}
+.professionalcard-info-bottom p{
+    font-weight: 500;
+    letter-spacing: 0.052rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.hire{
+    width: 70px;
+    height: 30px;
+    background: purple;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+.professional-account-detail{
+    background: white;
+    height: 800px;
+    width: 100%;
+    border-radius: 5px;
+    border:1px solid rgb(236, 129, 236);
+    margin: auto;
+}
+@media screen and (max-width: 960px) {
+    .professionalview-container{
+        width: 100%;
+        background: rgb(238, 233, 233);
+        min-height: 90vh;
+        padding: 20px;
+        padding-top: 90px;
+    }
+    .professionalview{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        background: white;
+        border-radius: 5px;
+        border-bottom:1px solid rgb(185, 181, 181);
+        border-bottom: none;
+    }
+    .professionalview-title{
+        height: 60px;
+        width: 100%;
+        border-bottom: 1px solid rgb(185, 181, 181);
+        display:flex;
+        align-items: center;
+    }
+    .professionalview-title h2{
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 0.042rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(34, 1, 34);
+        text-align: left;
+    }
+}
+.professionalcard-container-top{
+    display: flex;
+}
+/*professional-card-container*/
+@media screen and (max-width: 600px) {
+    .professionalcard-container{
+        padding:20px 0 20px 0;
+        height: auto;
+        width: 100%;
+        border-bottom: 1px solid rgb(185, 181, 181);
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        overflow: hidden;
+    }
+    .professionalcard-img{
+        width: 60px;
+        height: 60px;
+        margin-left: 100px;
+        overflow: hidden;
+        border-radius: 100%;
+        border: 1px solid black;
+    }
+    .professionalcard-img img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+    .professionalcard-title{
+        min-width: 300px;
+        height: auto;
+        padding: 0;
+    }
+    .professionalcard-title h3{
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 0;
+        letter-spacing: 0.042rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(34, 1, 34);
+        text-align: left;
+        text-transform: capitalize;
+    }
+    .professionalcard-title h5{
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.042rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(34, 1, 34);
+        text-align: left;
+        margin-left: 3px;
+        margin-bottom: 2px;
+    }
+    .professionalcard-info{
+        width: 100%;
+        height: auto;
+        padding-left: 60px;
+    }
+    .professionalcard-info-top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+    }
+    .professionalcard-info-top p{
+        display: none;
+    }
+    .professionalcard-info-bottom{
+        display: none;
+    }
+}

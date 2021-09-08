@@ -1,0 +1,94 @@
+.useraccount{
+    flex: 0.80;
+    padding-bottom:40px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 211, 211);
+}
+.useraccount-title{
+    width:65%;
+    margin: auto;
+    margin-top: 10px;
+}
+.useraccount-title h2{
+    font-weight: 520px;
+    line-height: 40px;
+    letter-spacing: 0.032rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    color: rgb(34, 1, 34);
+}
+.userdetail{
+    background:white;
+    height: auto;
+    width: 65%;
+    border-radius: 5px;
+    border:1px solid rgb(236, 129, 236);
+    margin: auto;
+}
+.userdetail-details{
+    height: 80px;
+    padding-left:30px ;
+    width: 100%;
+    border-bottom: 1px solid rgb(236, 129, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userdetail-details h2{
+    font-weight: 520;
+    line-height: 40px;
+    letter-spacing: 0.032rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    color: rgb(34, 1, 34);
+}
+.userdetail-profile{
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid rgb(236, 129, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userdetail-profile-img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.userdetail-profile-img img{
+    object-fit: cover;
+    max-width: 100%;
+}
+.userdetail-general{
+    height: auto;
+    width:100%;
+}
+.userdetail-general-name{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.userdetail-general-name h3{
+    font-weight: 520;
+    line-height: 40px;
+    letter-spacing: 0.032rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+}
+.userdetail-general-info{
+    margin-top: 10px;
+    width: 40%;
+    height: auto;
+}
+.userdetail-general-info-container{
+    display: flex;
+}
+.userdetail-general-info-action{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-top: 20px;
+}

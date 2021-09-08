@@ -1,0 +1,108 @@
+.verification-container{
+    background-image: url("https://res.cloudinary.com/rojgar-com/image/upload/v1630234860/7_c9hats.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.verification-container-info{
+    background-image: url("https://res.cloudinary.com/rojgar-com/image/upload/v1630234860/6_wliuzh.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.verification-container button{
+    height: 50px;
+    width: 200px;
+    background: purple;
+    color: white;
+    position: relative;
+    top:30%;
+}
+.verification-container button:hover{
+    background: rgb(228, 226, 226);
+    color: purple;
+}
+.verification-container input{
+    width: 400px;
+}
+.update-password{
+    min-height: 90vh;
+    padding-top: 100px;
+}
+/*forget password*/
+.forget-password-container{
+    background-image: url("https://res.cloudinary.com/rojgar-com/image/upload/v1630080345/Making_a_Difference_in_Peoples_Lives._ownx4v.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.forget-password-nav{
+    height: 70px;
+    width: 100%;
+    padding-left: 70px;
+    background: rgb(46, 1, 38);
+    position: sticky;
+    top: 0;
+}
+.forget-password-nav img{
+    height: 60px;
+    object-fit: cover;
+    float: left;
+    margin-top: 5px;
+}
+.forget-password-body{
+    width: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.forget-password-body-content{
+    width: 700px;
+    margin-right: 100px;
+    top: 70%;
+    position: relative;
+}
+.forget-password-body-content h1{
+    color: purple;
+    font-size: 60px;
+    word-wrap: wrap;
+    font-weight: 600;
+}
+.forget-password-body-content h4{
+    color: rgb(114, 114, 114);
+    word-wrap: wrap;
+    font-weight: 600;
+}
+.forget-password-body-content input{
+    width: 400px;
+    position: relative;
+    left: 21%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.forget-password-body-content button{
+    background: purple;
+    color: white;
+}
+.forget-password-information{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://res.cloudinary.com/rojgar-com/image/upload/v1630080345/Making_a_Difference_in_Peoples_Lives._ownx4v.png");
+}

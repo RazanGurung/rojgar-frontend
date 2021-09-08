@@ -1,0 +1,120 @@
+.register{
+    background-color: white;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.register h1{
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: purple;
+    font-weight: 530;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6) ;
+}
+.register__form{
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding:35px;
+    background-color: rgb(224, 216, 216);
+    border-radius: 10px;
+}
+.register__form h2{
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+}
+.register__form p{
+    color: red;
+    margin-top: 3px;
+    margin-bottom: -8px;
+}
+.register__name{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+.register__option{
+    width: 49%;
+}
+@media screen and (max-width: 500px) { 
+    .register__name{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .register__option{
+        width: 100%;
+    }
+}
+.register__label{
+    color: purple;
+    float: left;
+    margin:7px;
+}
+.register__button{
+    background-color: #88067d !important;
+    border: none !important;
+    outline:none;
+}
+.register input{
+    color: black;
+    background: white;
+}
+.register input:focus {
+    border:none;
+    outline: none;
+    border: 1px solid rgb(94, 3, 89) !important;
+    cursor: pointer;
+}
+.account-check{
+    float: none;
+    text-align: center;
+    margin: 10px 0 ;
+    color: purple;
+    padding: 2px;
+}
+.account-check-login{
+    color:#88067d;
+}
+.account-check-login:hover{
+    color: purple;
+}
+@media screen and (max-width: 960px) {
+    .register{
+        background-color: white;
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 70px;
+    }
+    .register h1{
+        line-height: 40px;
+        margin: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: purple;
+        font-weight: 530;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6) ;
+    }
+    .register__form{
+        display: block;
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        padding:25px;
+        background-color: rgb(224, 216, 216);
+        border-radius: 10px;
+    }
+}

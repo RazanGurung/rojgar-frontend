@@ -1,0 +1,48 @@
+.profile-container{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-img-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid rgb(73, 72, 72);
+    position: relative;
+}
+.certificate-img-container{
+    width: 130px;
+    height: 150px;
+    border: 2px solid rgb(73, 72, 72);
+    position: relative;
+}
+.profile-img-container img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border:none;
+}
+.myaccount__file{
+    position:absolute;
+    top: 84%;
+    left: 42.5%;
+    outline: none;
+    display: none;
+    color: transparent;
+    box-sizing: border-box;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    z-index: -1;
+}
+.myaccount__file__label{
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 3px;
+    background: rgb(153, 149, 149);
+}

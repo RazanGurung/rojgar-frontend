@@ -1,0 +1,68 @@
+.admin-dashboard-container{
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-dashboard{
+    width: 90%;
+    min-height:90vh ;
+    border-radius: 5px;
+}
+.admin-dashboard h2{
+    font-weight: 500;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: purple;
+    text-align: left;
+}
+.admin-dashboard-top{
+    height: 180px;
+    width: 100%;
+    box-shadow: 4px 6px 6px 2px rgba(105, 104, 104, 0.75);
+    -webkit-box-shadow: 4px 6px 6px 2px rgba(105, 104, 104, 0.75);
+    -moz-box-shadow: 4px 6px 6px 2px rgba(105, 104, 104, 0.75);
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+.admin-dashboard-top h4{
+    text-align: left;
+    color: purple;
+}
+.admin-dashboard-top-data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.admin-dashboard-item-cart{
+    height: 80px;
+    width: 200px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 4px 6px 6px 2px rgba(105, 104, 104, 0.75);
+    -webkit-box-shadow: 4px 6px 6px 2px rgba(105, 104, 104, 0.75);
+    -moz-box-shadow: 4px 6px 6px 2px rgba(105, 104, 104, 0.75);
+}
+.admin-dashboard-item-cart img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+.admin-dash-item-count{
+    height: inherit;
+    width: 60%;
+    padding:10px;
+}
+.admin-dash-item-count h1{
+    margin: 0;
+    color: purple;
+}
+.admin-dash-item-count p {
+    color: purple;
+    text-align: left;
+    margin-left: 10px;
+}

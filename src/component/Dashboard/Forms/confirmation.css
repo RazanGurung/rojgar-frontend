@@ -1,0 +1,24 @@
+.confirmation-container{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.confirmation-message{
+    justify-content: center;
+}
+.confirmation-action{
+    margin-top: 20px;
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+.confirmation-action button{
+    width: 60px;
+    height: 30px;
+    border:none;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+}

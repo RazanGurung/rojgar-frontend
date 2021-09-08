@@ -1,0 +1,346 @@
+.header-container{
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.34);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar-container{
+    max-width: 1200px;
+    background: inherit;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-logo{
+    align-items: left   ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.navbar-logo-img{
+    object-fit:scale-down;
+    width: 250px;
+    margin-top: -5px;
+    display: block;
+}
+@media screen and (max-width: 960px) {
+    .header-container{
+        width: 100%;
+        background-color: white;
+        height: auto;
+        box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.34);
+        -webkit-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.34);
+        -moz-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.34);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .navbar-container{
+        background: inherit;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+    }
+    .navbar-logo{
+       width: 100%;
+       height: 60px;
+       display: flex;
+       justify-content: space-between;
+       position: absolute;
+       align-items: center;
+    }
+    .navbar-logo-img{
+        object-fit:scale-down;
+        width: 200px;
+        display: block;
+        top: 0;
+        position: relative;
+    }
+}
+.navbar-search{
+    display: flex;
+    flex: 0.3;
+    border-radius: 30px;
+}
+.search-dropdown{
+    display: flex;
+    align-items: center;
+    background: transparent !important;
+    color: purple !important;
+    border: none;
+    height: 32px;
+    width: 100%;
+    justify-content: space-evenly;
+    border: 1px solid purple;
+    border-radius: 30px 0 0 30px;
+}
+.search-dropdown:hover{
+    background: transparent;
+}
+.search-dropdown:active{
+    background: white !important;
+    box-shadow: none !important;
+}
+.search-dropdown p{
+    font-size: 1.7rem;
+    font-weight: 520;
+    margin-top: 5px;
+    color: purple;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.searchexpand{
+    color: purple;
+}
+.search-dropdown-menu{
+    width: 280px;
+    height: auto;
+}
+.search-dropdown-menu-items{
+    padding:7px;
+    height: 50px !important;
+    width: 280px;
+    color: purple;
+    float: left;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.search-dropdown-menu-items:hover{
+    text-decoration: none;
+    background: rgb(236, 231, 231);
+}
+.search-dropdown-menu-items-options{
+    display: flex;
+    flex-direction: column;
+}
+.search-dropdown-menu-items-options h3{
+    font-size: 1.7rem;
+    color: rgb(114, 111, 114);
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    margin: 2px;
+}
+.search-dropdown-menu-items-options p{
+    font-size: 1.2rem;
+    color: rgb(189, 182, 189);
+    font-weight: 500;
+    float: left;
+    margin: 2px;
+}
+.navbar-searchbox{
+    height: 12px;
+    padding: 15px;
+    padding-left: 0;
+    border-style: none;
+    outline: none;
+    width: 100%;
+    border: none;
+}
+.navbar-searchIcon{
+    width: 40px !important;
+    padding: 5px;
+    height: 32px !important;
+    color: white;
+    cursor: pointer;
+    background: purple;
+    border-radius: 0 30px 30px 0;
+}
+.navbar-menu{
+    flex: 0.34;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+.navbar-menu-item{
+    font-size: 1.6rem;
+    font-weight: 520;
+    height: 80px;
+    line-height: 80px;
+    color: rgb(104, 101, 104);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar-menu-item:hover{
+    border-bottom: 4px solid purple !important;
+    color: purple !important;
+}
+.navbar-menu-item-active{
+    font-size: 1.6rem;
+    font-weight: 520;
+    height: 80px;
+    line-height: 80px;
+    color: rgb(104, 101, 104);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 4px solid purple !important;
+    color: purple !important;
+}
+.navbar-menu-item:link{
+    text-decoration: none;
+}
+.navbar-menu-item-active:link{
+    text-decoration: none;
+}
+.navbar-menu-item:visited{
+    color:  rgb(104, 101, 104);
+}
+.navbar-menu-item-button{
+    height: 80px;
+    flex: 0.25;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+}
+@media screen and (max-width: 960px) {
+    .navbar-search{
+        display: none;
+    }
+    .navbar-menu-item{
+        display: none;
+    }
+    .navbar-menu-item-button{
+        display: none;
+    }
+}
+.navbar-menu-item-button-signup{
+    background: purple;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    border-radius: 40px;
+}
+.navbar-menu-item-button-login{
+    background: white;
+    color: purple;
+    outline: none;
+    border: 1px solid purple;
+    height: 40px;
+    width: 100px;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    border-radius: 40px;
+}
+.navbar-menu-item-button-login:hover{
+    background-color: purple;
+    color: white;
+    transition: all 0.5s;
+}
+.web-menu-icon{
+    display: none;
+}
+@media screen and (max-width: 960px) {
+    .web-menu-icon{
+        height: inherit;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fas{
+        font-size: 30px;
+        color: purple;
+        margin-right: 30px;
+    }
+    .onclick-nav-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        background: white;
+        transition: all 0.5s ease;
+    }
+    .onclick-nav-menu{
+        display: flex;
+        flex-direction: column;
+        top: 60px;
+        position: relative;
+        width: 100%;
+        align-items: center;
+    }
+    .onclick-navbar-menu-item{
+        width: 35%;
+        font-size: 1.6rem;
+        font-weight: 520;
+        height: 50px;
+        line-height: 60px;
+        color: rgb(104, 101, 104);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .onclick-navbar-menu-item:hover{
+        border-bottom: 4px solid purple !important;
+        color: purple !important;
+    }
+    .onclick-navbar-menu-item-active{
+        font-size: 1.6rem;
+        font-weight: 520;
+        height: 80px;
+        line-height: 80px;
+        color: rgb(104, 101, 104);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-bottom: 4px solid purple !important;
+        color: purple !important;
+    }
+    .onclick-navbar-menu-item:link{
+        text-decoration: none;
+    }
+    .onclick-navbar-menu-item-active:link{
+        text-decoration: none;
+    }
+    .onclick-navbar-menu-item:visited{
+        color:  rgb(104, 101, 104);
+    }
+    .onclick-navbar-menu-item-button{
+        width: 100%;
+        top:80px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .onclick-navbar-menu-item-button-signup{
+        background: purple;
+        color: white;
+        outline: none;
+        border: none;
+        height: 40px;
+        width: 300px;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        border-radius: 40px;
+    }
+    .onclick-navbar-menu-item-button-login{
+        background: white;
+        color: purple;
+        outline: none;
+        border: 1px solid purple;
+        height: 40px;
+        width: 300px;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        border-radius: 40px;
+        margin-bottom: 30px;
+    }
+    .navbar-menu-item-button-login:hover{
+        background-color: purple;
+        color: white;
+        transition: all 0.5s;
+    }
+}

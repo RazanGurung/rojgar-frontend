@@ -1,0 +1,225 @@
+.application-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:40px;
+    background-color: rgb(212, 211, 211);
+    align-items: center;
+}
+.application-container-body{
+    width: 75%;
+    margin: 30px;
+    background: white;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid rgb(201, 197, 197);
+}
+.application-container-body h3{
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+    margin-left: 40px;
+    align-items: none;
+    text-align: start;
+}
+.application-detail{
+    border-top: 1px solid rgb(201, 197, 197);
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+}
+.applicant{
+    height: 60px;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.applicant-profile{
+    height: 60px;
+    width: 265.47px;
+    display: flex;
+    justify-content: start;
+}
+.applicant-profile-second{
+    height: 60px;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+}
+.applicant-profile-second img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.applicant-profile img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.applicant-action{
+        width: 220px;
+        background: purple;
+        color: white;
+        margin-top: 30px;
+}
+.applicant-action:hover{
+    color: purple;
+    background: rgb(231, 228, 228);
+}
+.applicant-profile-detail{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.applicant-profile-detail h4{
+    color: purple;
+    margin: 0;
+    text-align: left;
+}
+.applicant-profile-detail p{
+    color: rgb(138, 135, 138);
+    margin: 0;
+    text-align: left;
+    margin-left: 4px;
+    font-size: 13px;
+    margin-top: 2px;
+}
+.application-info{
+    height: auto;
+    width: 100%;
+    border:  1px solid rgb(201, 197, 197);
+}
+.application-info h4{
+    text-align: left;
+    margin-left: 10px;
+}
+.application-info hr{
+    margin: 0;
+}
+.application-info p{
+    text-align: justify;
+    padding: 5px 10px;
+}
+.application-action-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.application-action-button button{
+    margin:0 10px 10px 10px;
+    width: 100px;
+    background: purple;
+    color: white;
+}
+.application-action-button button:hover{
+    color: purple;
+    background-color: rgb(206, 197, 206);
+}
+.applicaiton-detail-container{
+    width: 75%;
+    background: white;
+    border-radius: 3px;
+}
+.applicaiton-details-container{
+    border-top: 1px solid rgb(211, 209, 209);
+}
+.applicaiton-details-container-title{
+    float: left;
+    margin-left:40px ;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+}
+.review-container{
+    border-top: 1px solid rgb(201, 197, 197);
+    width: 100%;
+    display: flex;
+    padding: 10px 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+}
+.review-container h4{
+    text-align: left;
+    font-weight: 550;
+    margin-left: 40px;
+}
+.review-detail-container{
+    min-height: 50px;
+    width: 100%;
+    border-top: 1px solid rgb(201, 197, 197);
+}
+.reviewer-detail-container{
+    height: 30px;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.review-detail-container img{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    background: #000;
+    margin-right: 10px;
+}
+.reviewer-rating{
+    height: inherit;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.reviewer-rating p{
+    font-weight: 550;
+    margin: 0;
+}
+.review-view-container{
+    height: auto;
+    border: 1px solid rgb(219, 216, 216);
+    width: 92%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    padding:0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.review-view-container p{
+    font-weight: 500;
+    float: left;
+    text-align: justify;
+    margin:0;
+    width: 100%;
+    min-height: 50px;
+}
+.review-view-action{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background: white;
+    margin-bottom: 8px;
+}
+.review-view-action button{
+    margin:0 10px 10px 10px;
+    width: 100px;
+    background: purple;
+    color: white;
+}
+.review-view-action button:hover{
+    color: purple;
+    background-color: rgb(206, 197, 206);
+}

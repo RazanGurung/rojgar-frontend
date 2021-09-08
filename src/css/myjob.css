@@ -1,0 +1,157 @@
+.myjob-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:40px;
+    background-color: rgb(212, 211, 211);
+    align-items: center;
+    min-height: 90vh;
+}
+.myjob-header{
+    height: 70px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.myjob-header h3{
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+    margin-left: 20px;
+    text-align: left;
+}
+.myjob-add-button{
+    background: rgb(197, 188, 188);
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+    font-weight: 500;
+    line-height: 50px;
+    width: 200px;
+}
+.job-post-icon{
+    font-size: 25px !important;
+}
+.myjob-new, .myjob-history{
+    height: auto;
+    width: 75%;
+    background: white;
+    border-radius: 5px;
+    min-height: 100px;
+    border: 1px solid rgb(182, 178, 178);
+}
+.myjob-history{
+    margin-top: 30px;
+}
+hr{
+    background-color: rgb(143, 138, 138);
+}
+.myjob-new h4, .myjob-history h4{
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+    margin-left: 20px;
+    text-align: left;
+}
+.new-job{
+    min-height: 200px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(182, 178, 178);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.new-job-title{
+    display: flex;
+    justify-content: space-between;
+}
+.new-job-title h4{
+    font-weight: 520;
+    letter-spacing: 0.022rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(34, 1, 34);
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0;
+}
+.job-edit{
+    margin-top: 15px;
+    outline: none;
+    visibility: visible;
+    color: black;
+    background-color: color;
+    border:1px solid rgb(134, 130, 130);
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-right: 30px;
+}
+.new-job-desc{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.new-job-desc p{
+    font-weight: 500;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(95, 93, 95);
+    text-align: justify;
+}
+.new-job-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 7px;
+}
+.new-job-info-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 7px;
+    flex-direction: column;
+}
+.new-job-info-option h5{
+    font-weight: bold;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 34);
+    margin-left: 20px;
+}
+.new-job-description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.new-job-description button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background:purple;
+    color: white;
+}
+.new-job-description button:hover{
+    background: rgb(197, 195, 195);
+    color: purple;
+}
+.new-job-title-icon{
+    width: 130px;
+    display: flex;
+}
+.new-job-info-option-title{
+    font-weight: 550;
+    
+}

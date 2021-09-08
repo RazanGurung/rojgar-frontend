@@ -1,0 +1,7 @@
+.slide-pane__overlay{
+    z-index: 10;
+}
+.slide-pane__header{
+    background:rgb(49, 1, 49)  !important;
+    color: white;
+}

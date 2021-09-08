@@ -1,0 +1,35 @@
+.view-user-container{
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view-user{
+    height: 90vh;
+    width: 95%;
+}
+.view-user h2{
+    font-weight: 500;
+    letter-spacing: 0.042rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: purple;
+    text-align: left;
+}
+.view-user-table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.view-user-table th{
+    background: purple;
+    color: white;
+}
+.view-user-table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 18px;
+}
+  
+.view-user-table tr:nth-child(even) {
+background-color: #dddddd;
+}

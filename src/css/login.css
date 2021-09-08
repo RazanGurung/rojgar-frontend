@@ -1,0 +1,104 @@
+.login{
+    background-color: white;
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.login input:focus {
+    border:none;
+    outline: none;
+    border: 1px solid rgb(94, 3, 89) !important;
+    cursor: pointer;
+    background-color: white;
+}
+.login input{
+    background: white;
+    color: black;
+}
+.login h1{
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    color: purple;
+    font-weight: 530;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6) ;
+}
+.login__form{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding:35px;
+    background-color: rgb(224, 216, 216);
+    border-radius: 10px;
+}
+.login__form p{
+    color: red;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+.login__checkbox{
+    float: left;
+    margin-top: 10px !important;
+}
+.login__label{
+    color: purple;
+    float: left;
+    margin:7px;
+}
+.login__label:hover{
+    color: purple;
+}
+.login__button{
+    border: none !important;
+}
+.social-label{
+    float: none;
+    text-align: center;
+    margin: 10px 0 ;
+    color: purple;
+    padding: 2px;
+}
+.social-label:hover{
+    text-decoration: underline;
+    color: purple;
+}
+.login__button{
+    background-color: #88067d !important;
+    border: none !important;
+}
+@media screen and (max-width: 600px) {
+    .login{
+        background-color: white;
+        height: auto;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 80px;
+    }
+    .login h1{
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        color: purple;
+        font-weight: 530;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6) ;
+    }
+    .login__form{
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        padding:25px;
+        background-color: rgb(224, 216, 216);
+        border-radius: 10px;
+    }
+}

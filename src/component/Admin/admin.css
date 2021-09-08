@@ -1,0 +1,122 @@
+.admin-login-container{
+    width: 100%;
+    height: 70px;
+}
+.admin-login-navbar{
+    height: 70px;
+    width: 100%;
+    background: rgb(49, 0, 43);
+}
+.admin-login-logo{
+    max-width: 1200px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+}
+.admin-login-logo img{
+    object-fit: cover;
+    height: 60px;
+}
+/*dashboard*/
+.admin-nav-container{
+    width: 100%;
+    height: 70px;
+    background: rgb(58, 1, 48);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+}
+.admin-logo{
+    height: inherit;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.admin-logo img{
+    height: 60px;
+    object-fit: cover;
+}
+.admin-search{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border: 1px solid lightgray;
+    height: auto;
+    border-radius: 7px;
+    background: white;
+}
+.admin-search >input{
+    flex:1;
+    border: none;
+    padding-left: 20px;
+    outline: none;
+    height: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px 0 0 5px ;
+    border-right: 1px solid purple;
+}
+.admin-search-icon{
+    background: white;
+    border-radius:0 5px 5px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* sidebar */
+.sidebar{
+    flex: 0.20;
+    background-color:rgb(58, 1, 48);
+    padding-top: 15px;
+    min-height: 89vh;
+    position: sticky;
+    top: 70;
+    left: 0;
+}
+.sidebar > hr{
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+/* sidebarrow */
+.sidebarrow{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+.sidebarrow__icon{
+    margin-left: 30px;
+}
+.sidebarrow__title{
+    flex:1;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 500px;
+    text-decoration: none;
+}
+.sidebarrow:hover{
+    background-color:#e6e2df ;
+    cursor: pointer;
+    color: purple !important;
+}
+.sidebarrow:hover > .sidebarrow__icon{
+    color: purple;
+}
+.sidebarrow:hover > .sidebarrow__title{
+    font-weight: bold;
+    color: purple;
+    text-decoration: none;
+}
+.sidebarrow.selected{
+    background-color: rgb(250, 245, 245);
+    color: purple;
+}
