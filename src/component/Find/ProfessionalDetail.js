@@ -119,7 +119,42 @@ function ProfessionalDetail({id}) {
                         </div>
                         <div className="account-detail-user-info-professional-work-history">
                             <h4>Work History</h4>
-                            <p>No work History</p>
+                            {
+                                 reviews.length == 0 ?(
+                                    <div className="account-work-history-card">
+                                        <p>No work history.</p>
+                                    </div>
+                                 ):(
+                                    reviews.map((review)=>{
+                                        return(
+                                            <div className="account-work-history-card">
+                                                <div className="account-work-reviewer">
+                                                    {
+                                                        review.profile == "noImage.jpg" ? (
+                                                            <img src="https://res.cloudinary.com/rojgar-com/image/upload/v1629620757/user_copllo.png" />
+                                                        ):(
+                                                            <img src={review.profile} />
+                                                        )
+                                                    }
+                                                    <div className="reviewer-rating">
+                                                        <p>{review.username}</p>
+                                                        <StarRatings 
+                                                            rating={review.rating}
+                                                            starDimension="15px"
+                                                            starSpacing="2px"
+                                                            starRatedColor="purple"
+                                                            className="star-rating-reviewer"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div className="account-work-review">
+                                                    <p>{review.review}</p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                 )
+                            }
                         </div>
                     </div>
                 </div>
