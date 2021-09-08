@@ -14,7 +14,7 @@ class ProfessionalCard extends React.Component {
     }
     componentDidMount=()=>{
         this.retriveRating()
-        setTimeout(() =>this.ratingTotal() , 500)
+        setTimeout(() =>this.ratingTotal() , 1000)
     }
     retriveRating=()=>{
         axios.get("https://rojgar-backend.herokuapp.com/review/professional/"+this.props.id).then(res=>{
