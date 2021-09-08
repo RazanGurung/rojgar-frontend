@@ -83,46 +83,30 @@ function ProfessionalDetail({id}) {
                 <div className="account-detail-user">
                     <div className="account-detail-user-img">
                         <img src={profile} className="user-profile"/>
-                        <div className="edit-profile" onClick={()=>setProfilePopup(true)}><EditIcon /></div>
                     </div>
                     <div className="account-detail-user-name">
-                        <h3>{username}</h3>
+                        <h3>{firstname +" "+ lastname}</h3>
                         {
                             country == "" ? <p><LocationOnIcon />{"street, city, country"}  </p> : <p><LocationOnIcon />{street+", "+city+", "+country}  </p>
                         }
-                    </div>
-                    <div className="account-detail-user-button">
-                        <Dropdown>
-                            <Dropdown.Toggle id="dropdown-basic" className="accnav-dropdown">
-                                <p>Setting</p>
-                                <SettingsIcon />
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu className="accnav-dropdown-menu">
-                                <Dropdown.Item className="accnav-dropdown-menu-items" onClick={()=>setUpdatePasswordPopup(true)}><VpnKeyIcon className="nav-menu-item-icon"/>Change Password</Dropdown.Item>
-                                <Dropdown.Item className="accnav-dropdown-menu-items" onClick={()=>setConfirmPopup(true)}><DeleteForeverIcon className="nav-menu-item-icon"/>Delete Account</Dropdown.Item>
-                                <Dropdown.Item onClick={logout}  className="accnav-dropdown-menu-items"><PowerSettingsNewIcon className="nav-menu-item-icon"/> Logout</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown> 
                     </div>
                 </div>
                 <div className="account-detail-user-info">
                     <div className="account-detail-user-info-general">
                         <div className="general">
-                            <div className="general-title"><h3>General Info</h3><div className="edit" onClick={()=>setGeneralPopup(true)}><EditIcon /></div></div>
+                            <div className="general-title"><h3>General Info</h3></div>
                             <div className="general-info"><WcIcon className="general-icon"/> <p>{gender}</p></div>
-                            <div className="general-info"><MergeTypeIcon className="general-icon"/> <p>{usertype}</p></div>
-                            <div className="general-info"><CakeIcon className="general-icon"/>{dob=="" ? "Add Date of Birth" : <p>{dob}</p>} </div>
-                            <div className="general-info"><p>&#x20B9;</p>{dob=="" ? "Add Your Paying Rate" : <p>{payrate}</p>}</div>
+                            <div className="general-info"><p>&#x20B9;</p>{payrate=="" ? "Add Your Paying Rate" : <p>{payrate}</p>}</div>
                         </div>
                         <div className="general">
-                            <div className="general-title"><h3>Education </h3><div className="edit" onClick={()=>setEducationPopup(true)}><EditIcon /></div></div>
+                            <div className="general-title"><h3>Education </h3></div>
                             <div className="general-info">{university=="" ? "Add Your Education" : <h4>{university}</h4>}</div>
                             <div className="general-info">{degree=="" ? "Add Your Education" : <p>{degree}</p>}</div>
                             <div className="general-info"> {faculty=="" ? "Add Your Education" : <p>{faculty}</p>}</div>
                             <div className="general-info"> {startdate==null ? "Add Your Education" : <p> {startdate+ " to " +enddate}</p>}</div>
                         </div>  
                         <div className="general">
-                            <div className="general-title"><h3>Languages</h3><div className="edit" onClick={()=>setLanguagePopup(true)}><EditIcon /></div></div>
+                            <div className="general-title"><h3>Languages</h3></div>
                             <div className="general-info">{planguage=="" ? <p>Add Primary Language</p> : <p>{planguage+" : " +pdifficulty}</p>}</div>
                             <div className="general-info">{slanguage=="" ? <p>Add Secondary Language</p> : <p>{slanguage+" : " +sdifficulty}</p>} </div>
                             <div className="general-info">{tlanguage=="" ? <p>Add Tertiary Language</p> : <p>{tlanguage+" : " +tdifficulty}</p>} </div>
@@ -130,7 +114,7 @@ function ProfessionalDetail({id}) {
                     </div>
                     <div className="account-detail-user-info-professional">
                         <div className="account-detail-user-info-professional-description">
-                            <div className="general-title">{jobtitle == "" ? <h2>Add Job Title</h2> : <h2>{jobtitle}</h2>}<div className="edit" onClick={()=>setDescriptionPopup(true)}><EditIcon /></div></div>
+                            <div className="general-title">{jobtitle == "" ? <h2>Add Job Title</h2> : <h2>{jobtitle}</h2>}</div>
                             {jobdescription=="" ? <p>Add Job Description</p> : <p>{jobdescription}</p>}
                         </div>
                         <div className="account-detail-user-info-professional-work-history">
